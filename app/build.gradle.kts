@@ -9,13 +9,13 @@ android {
     applyAppDefaultConfig()
 
     applySigningConfig(
-        /*SigningData(
+        SigningData(
             name = release,
             keystore = file("app_release_keystore.jks"),
-            keystorePassword = "SmockLess31012022!:)*",
+            keystorePassword = "ComposeUtilsCommon05022022!:)*",
             alias = "release_sign_key",
-            password = "SmockLess31012022!:)*"
-        )*/
+            password = "ComposeUtilsCommon05022022!:)*"
+        )
     )
 
     applyAppFlavors()
@@ -28,6 +28,8 @@ android {
 }
 
 dependencies {
+
+    module(name = "common")
 
     androidCore()
     androidRuntime()
